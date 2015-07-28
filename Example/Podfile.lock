@@ -1,0 +1,18 @@
+PODS:
+  - HaidoraValidation (0.1.0):
+    - REValidation
+  - REValidation (0.1.4)
+
+DEPENDENCIES:
+  - HaidoraValidation (from `../`)
+  - REValidation
+
+EXTERNAL SOURCES:
+  HaidoraValidation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HaidoraValidation: 63aa1c9381723f5e224cdbb0f005e1579b22805d
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+
+COCOAPODS: 0.37.2

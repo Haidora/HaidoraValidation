@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'HaidoraValidation_Example', :exclusive => true do
+  pod "HaidoraValidation", :path => "../"
+  pod 'REValidation'
+end
+
+target 'HaidoraValidation_Tests', :exclusive => true do
+  pod "HaidoraValidation", :path => "../"
+  pod 'REValidation'
+end
