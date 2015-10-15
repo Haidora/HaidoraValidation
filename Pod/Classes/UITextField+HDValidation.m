@@ -39,30 +39,23 @@ static char *kHD_UITextField_validatorName = "kHD_UITextField_validatorName";
 
 - (void)setHd_validatorName:(NSString *)hd_validatorName
 {
-    objc_setAssociatedObject(self, kHD_UITextField_validatorName, hd_validatorName,
+    objc_setAssociatedObject(self, &kHD_UITextField_validatorName, hd_validatorName,
                              OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSString *)hd_validatorName
 {
-    return objc_getAssociatedObject(self, kHD_UITextField_validatorName);
+    return objc_getAssociatedObject(self, &kHD_UITextField_validatorName);
 }
 
-- (NSMutableArray *)hd_validators
+- (NSArray *)hd_validators
 {
-    NSMutableArray *validators = objc_getAssociatedObject(self, kHD_UITextField_validators);
-    if (validators == nil)
-    {
-        validators = [NSMutableArray array];
-        objc_setAssociatedObject(self, kHD_UITextField_validators, validators,
-                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    return validators;
+    return objc_getAssociatedObject(self, &kHD_UITextField_validators);
 }
 
-- (void)setHd_validators:(NSMutableArray *)hd_validators
+- (void)setHd_validators:(NSArray *)hd_validators
 {
-    objc_setAssociatedObject(self, kHD_UITextField_validators, hd_validators,
+    objc_setAssociatedObject(self, &kHD_UITextField_validators, hd_validators,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

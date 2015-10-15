@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.input1.hd_validatorName = @"输入框";
     self.input2.hd_validatorName = @"输入框2";
-    [self.input2.hd_validators addObject:[[REPresenceValidator alloc] init]];
+    self.input2.hd_validators = @[ [[REPresenceValidator alloc] init] ];
 }
 
 - (void)didReceiveMemoryWarning

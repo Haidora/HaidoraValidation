@@ -24,7 +24,7 @@
 /**
  *  验证器集合
  */
-@property (nonatomic, strong) IBOutletCollection(REValidator) NSMutableArray *hd_validators;
+@property (nonatomic, strong) IBOutletCollection(REValidator) NSArray *hd_validators;
 
 /**
  *  验证

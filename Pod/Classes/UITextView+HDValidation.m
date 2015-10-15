@@ -39,30 +39,23 @@ static char *kHD_UITextView_validatorName = "kHD_UITextView_validatorName";
 
 - (void)setHd_validatorName:(NSString *)hd_validatorName
 {
-    objc_setAssociatedObject(self, kHD_UITextView_validatorName, hd_validatorName,
+    objc_setAssociatedObject(self, &kHD_UITextView_validatorName, hd_validatorName,
                              OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSString *)hd_validatorName
 {
-    return objc_getAssociatedObject(self, kHD_UITextView_validatorName);
+    return objc_getAssociatedObject(self, &kHD_UITextView_validatorName);
 }
 
-- (NSMutableArray *)hd_validators
+- (NSArray *)hd_validators
 {
-    NSMutableArray *validators = objc_getAssociatedObject(self, kHD_UITextView_validators);
-    if (validators == nil)
-    {
-        validators = [NSMutableArray array];
-        objc_setAssociatedObject(self, kHD_UITextView_validators, validators,
-                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    return validators;
+    return objc_getAssociatedObject(self, &kHD_UITextView_validators);
 }
 
-- (void)setHd_validators:(NSMutableArray *)hd_validators
+- (void)setHd_validators:(NSArray *)hd_validators
 {
-    objc_setAssociatedObject(self, kHD_UITextView_validators, hd_validators,
+    objc_setAssociatedObject(self, &kHD_UITextView_validators, hd_validators,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
