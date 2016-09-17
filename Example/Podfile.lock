@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HaidoraValidation: 63aa1c9381723f5e224cdbb0f005e1579b22805d
+  HaidoraValidation: 2cfd6f4070b4a9576d37d28dc7575a9032044718
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

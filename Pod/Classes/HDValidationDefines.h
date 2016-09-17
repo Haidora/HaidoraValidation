@@ -10,7 +10,7 @@
 #define Pods_HDValidationDefines_h
 
 #import <Foundation/Foundation.h>
-#import <REValidation.h>
+#import <REValidation/REValidation.h>
 
 @protocol HDValidation <NSObject>
 
